@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ornament</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="/public/scripts/jquery-3.2.1.js"></script>
+    <script src="/public/scripts/jq.js"></script>
+  </head>
+  <body>
+    <div class="nav hidden">
+      <div class="logo">
+        <img src="/public/img/logo.png" class="logoimg" />
+      </div>
+      <div class="contain-nav-options">
+        <button class="nav-options">About</button>
+        <button class="nav-options">Projects</button>
+        <button class="nav-options">Contact</button>
+        <button class="menu-button">
+          <span class="menu-button-span shorter-span"></span>
+          <span class="menu-button-span"></span>
+          <span class="menu-button-span shorter-span"></span>
+        </button>
+        <script>
+          $('.menu-button').hover(function(){
+            $('.menu-button-span').css('background-color', '#959595');
+          }, function(){
+            $('.menu-button-span').css('background-color', '#626262');
+          });
+        </script>
+      </div>
+
+    </div>
+    <div class="contain">
+      <div class="biglogo up-a-bit">
+        <img class="center-logo" src="/public/img/mainpage-header.png"/>
+        <p class="motto">Loading...</p>
+        <div class="loader"></div>
+      </div>
+      <div class="contain-floating-links hidden">
+        <img id="leaf-link" class="links-floating" src="/public/img/leave.png"/>
+        <img id="wave-link" class="links-floating" src="/public/img/waves.png"/>
+        <img id="tree-link" class="links-floating" src="/public/img/trees.png"/>
+        <img id="dandelion-link" class="links-floating" src="/public/img/dandelions.png" />
+      </div>
+    </div>
+  </body>
+</html>
