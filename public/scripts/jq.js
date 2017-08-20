@@ -22,7 +22,6 @@ $(document).mousemove(function(event){
   $('#contain-wave').css('transform','translate3d('+((event.pageY/screenWidth)*50)+'px,'+-(event.pageY/screenWidth)*20+'px,0)');
   $('#contain-dandelion').css('transform','translate3d('+((event.pageY/screenWidth)*30)+'px,'+-(event.pageY/screenWidth)*70+'px,0)');
   $('#contain-tree').css('transform','translate3d('+(-(event.pageY/screenWidth)*30)+'px,'+(event.pageY/screenWidth)*70+'px,0)');
-
 });
 
 
