@@ -23,6 +23,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   transition:all 800ms ease-in-out;
+  overflow:hidden;
 }
 .contain{
   position:absolute;
@@ -193,7 +194,6 @@ body{
   transition:all 1.5s ease-in-out;
   display:block;
   z-index:10;
-
 }
 .motto{
   color:black;
@@ -247,7 +247,7 @@ body{
   padding:0 50px;
   width:100%;
   padding-top:100px;
-  height:calc(100vh - 80px);
+  height:100%;
 }
 .contain-individual-images-slow{
   transition: all 2s ease-in-out;
@@ -300,14 +300,14 @@ body{
 }
 #contain-wave{
   position: absolute;
-  right:calc(30vw - 150px);
-  bottom:0;
+  right:calc(28vw - 150px);
+  bottom:30px;
 }
 #contain-tree{
   position:absolute;
-  bottom:0;
+  bottom:100px;
   left:0;
-  margin-left:calc(25vw - 150px);
+  margin-left:calc(26vw - 150px);
 }
 #contain-dandelion{
   position:absolute;
