@@ -15,19 +15,33 @@
         <p class="motto">Loading...</p>
         <div class="loader"></div>
         <button class="learn">Learn more</button>
-
+      </div>
+      <div class="tint">
+        <div class="tint-contents">
+          <ol>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ol>
+        </div>
       </div>
       <div class="contain-floating-links hidden">
-        <div class="contain-individual-images" id="contain-leaf">
+        <div class="contain-individual-images contain-individual-images-left" id="contain-leaf">
           <img id="leaf-link" class="links-floating" src="/public/img/leaves.png"/>
         </div>
-        <div id="contain-wave">
-          <img id="wave-link" class="links-floating" src="/public/img/waves.png"/>
-        </div>
-        <div id="contain-tree">
+        <div class="contain-individual-images contain-individual-images-left" id="contain-tree">
           <img id="tree-link" class="links-floating" src="/public/img/trees.png"/>
         </div>
-        <div id="contain-dandelion">
+        <div class="contain-individual-images contain-individual-images-right" id="contain-wave">
+          <img id="wave-link" class="links-floating" src="/public/img/waves.png"/>
+        </div>
+        <div class="contain-individual-images contain-individual-images-right" id="contain-dandelion">
           <img id="dandelion-link" class="links-floating" src="/public/img/dandelion.png" />
         </div>
       </div>
@@ -35,16 +49,15 @@
     <div class="nav hidden">
       <div class="logo logo-hidden">
         <img src="/public/img/logo.png" class="logoimg" />
-        <!-- <p class="logo-name">Ornament</p> -->
       </div>
       <div class="contain-nav-options contain-nav-options-hidden">
-        <button class="nav-options">About</button>
+        <!-- <button class="nav-options">About</button>
         <button class="nav-options">Projects</button>
-        <button class="nav-options">Contact</button>
+        <button class="nav-options">Contact</button> -->
         <button class="menu-button">
-          <span class="menu-button-span shorter-span"></span>
-          <span class="menu-button-span"></span>
-          <span class="menu-button-span shorter-span"></span>
+          <span class="menu-button-span shorter-span shorter-span-right"></span>
+          <span class="menu-button-span span-center"></span>
+          <span class="menu-button-span shorter-span shorter-span-left"></span>
         </button>
         <script>
           $('.menu-button').hover(function(){
