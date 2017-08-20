@@ -31,6 +31,7 @@ $(document).on('click', '.menu-button', function(){
     $('.shorter-span-left').css('transform','translate(0,-4.5px) rotate(45deg)  scale(2)');
     $('.shorter-span-right').css('transform','translate(0px,4.5px) rotate(-45deg) scale(2)');
     $('.span-center').css('height','0');
+    $('.contain-individual-images').toggleClass('contain-individual-images-slow');
     $('.contain-nav-options').toggleClass('contain-nav-options-move-in');
     $('.contain-individual-images-left').toggleClass('move-out-left');
     $('.contain-individual-images-right').toggleClass('move-out-right');
@@ -45,6 +46,9 @@ $(document).on('click', '.menu-button', function(){
     $('.contain-nav-options').removeClass('contain-nav-options-move-in');
     $('.contain-individual-images-left').removeClass('move-out-left');
     $('.contain-individual-images-right').removeClass('move-out-right');
+    setTimeout(function(){
+      $('.contain-individual-images').removeClass('contain-individual-images-slow');
+    },2000);
     $('.tint').removeClass('tint-appear');
     menuOpened = false;
   }

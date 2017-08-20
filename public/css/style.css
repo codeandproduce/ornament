@@ -242,7 +242,7 @@ body{
   padding-top:100px;
   height:calc(100vh - 80px);
 }
-.contain-individual-images{
+.contain-individual-images-slow{
   transition: all 2s ease-in-out;
 }
 .links-floating{
