@@ -4,10 +4,19 @@
 *:focus{
   outline:none;
 }
+*{
+  font-family:"Avenir Next";
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/public/Avenir Next.ttc");
+  src:
+  url("/public/Avenir Next.ttc") format("ttc");
+}
 body{
   padding:0;
   margin:0;
-  font-family: sans-serif;
+  font-family: "Avenir Next";
   background-image: url('/public/img/background.png');
   background-position:center;
   background-repeat: repeat;
@@ -45,12 +54,12 @@ body{
 .learn{
   width:150px;
   height:60px;
-  font-size:13px;
+  font-size:15px;
   border:1px solid #91D3C8;
   background:none;
   display:none;
   margin:auto;
-  margin-top:50px;
+  margin-top:30px;
   color:#91D3C8;
   animation: shakeslow 2200ms linear infinite;
 }
@@ -90,12 +99,13 @@ body{
   left: 80px;
   position: absolute;
   letter-spacing: 3px;
-  font-weight: 100;
+  font-weight: 300;
   color:#91D3C8;
   font-size:20px;
 }
 .contain-nav-options{
   padding:18px;
+  padding-top: 29px;
   display:inline-block;
   float:right;
   height:80px;
@@ -143,7 +153,7 @@ body{
   border-radius: 7px;
   display:block;
   width:70%;
-  height:4px;
+  height:3px;
   background-color:#626262;
 }
 .shorter-span{
@@ -171,9 +181,8 @@ body{
 }
 .motto{
   color:black;
-  font-family:sans-serif;
   font-size:15px;
-  font-weight: 100;
+  font-weight: 200;
   width:100%;
   text-align: center;
   animation: shakeslow 2200ms linear infinite;
@@ -189,10 +198,10 @@ body{
     transform: translate3d(0, 0, 0);
   }
   33.3%{
-    transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -1.5px, 0);
   }
   66.6%{
-    transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 1.5px, 0);
   }
   100%{
     transform: translate3d(0, 0, 0);
@@ -204,10 +213,10 @@ body{
     transform: translate3d(0, 0, 0);
   }
   33.3%{
-    transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -1px, 0);
   }
   66.6%{
-    transform: translate3d(0, 2px, 0);
+    transform: translate3d(0, 1px, 0);
   }
   100%{
     transform: translate3d(0, 0, 0);
@@ -238,20 +247,13 @@ body{
   transform: translate3d(0, 212321px, 0);
 }
 #wave-link{
-  position: absolute;
   width:250px;
   height:250px;
-  bottom:0;
-  right:calc(26vw - 150px);
   animation: shakeslow 2200ms linear infinite;
 }
 #tree-link{
   width:150px;
   height:150px;
-  position:absolute;
-  bottom:0;
-  left:0;
-  margin-left:calc(20vw - 150px);
   animation: shakeslow 2200ms linear infinite;
 }
 #dandelion-link{
@@ -259,5 +261,21 @@ body{
   height:200px;
   float:right;
   animation: shakeslow 2200ms linear infinite;
-  margin-right:calc(15vw - 150px);
+  margin-right:calc(20vw - 150px);
+}
+
+
+#contain-leaf{
+  position:absolute;
+}
+#contain-wave{
+  position: absolute;
+  right:calc(30vw - 150px);
+  bottom:0;
+}
+#contain-tree{
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin-left:calc(25vw - 150px);
 }

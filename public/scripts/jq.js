@@ -18,9 +18,11 @@ $(document).ready(function(){
   screenHeight = $(document).height();
 });
 $(document).mousemove(function(event){
-  $('.links-floating').css('transform','translate3d('+((event.pageY/screenWidth)*200)+'px,0,0)');
-  console.log('translate3d('+((event.pageY/screenWidth)*200)+'px,0,0)');
-  console.log('awef');
+  $('#contain-leaf').css('transform','translate3d('+(-(event.pageY/screenWidth)*50)+'px,'+(event.pageY/screenWidth)*20+'px,0)');
+  $('#contain-wave').css('transform','translate3d('+((event.pageY/screenWidth)*50)+'px,'+-(event.pageY/screenWidth)*20+'px,0)');
+  $('#contain-dandelion').css('transform','translate3d('+((event.pageY/screenWidth)*30)+'px,'+-(event.pageY/screenWidth)*70+'px,0)');
+  $('#contain-tree').css('transform','translate3d('+(-(event.pageY/screenWidth)*30)+'px,'+(event.pageY/screenWidth)*70+'px,0)');
+
 });
 
 
