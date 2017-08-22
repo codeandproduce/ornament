@@ -10,13 +10,34 @@ window.addEventListener("load", function(){
   $('.learn').css('display','block');
   $('.come-right').css('right', '0');
   $('.motto').text('First impression is everything.');
+
+  document.addEventListener('scroll', function (event) {
+      if (event.target.id == 'about-contain') {
+        var scrollableDivHeight = $(event.target).height(),
+            scrollTop = $(event.target).scrollTop(),
+            windowHeight = $(window).height();
+        var actualScrollTop = $(event.target).scrollTop() + $(event.target).height();
+        var addedAlready = false;
+        if(actualScrollTop >= $(event.target)[0].scrollHeight-20 && !addedAlready){
+          console.log('bruh');
+          $('#contain-tree').removeClass('move-out-left');
+          $('#contain-tree').toggleClass('tree-link-show');
+          $('.tree-label').css('opacity','1');
+          // $('#contain-tree').toggleClass('selected-img');
+          addedAlready = true;
+        }
+      }
+  }, true /*Capture event*/);
+  console.log($('.about-contain').scrollTop());
 });
+
 var screenWidth = 0;
 var screenHeight = 0;
 $(document).ready(function(){
   screenWidth = $(document).width();
   screenHeight = $(document).height();
 });
+
 var firstpage = true;
 $(document).mousemove(function(event){
   if(firstpage){
@@ -26,7 +47,6 @@ $(document).mousemove(function(event){
     $('#contain-tree').css('transform','translate3d('+(-(event.pageY/screenWidth)*30)+'px,'+(event.pageY/screenWidth)*70+'px,0)');
   }
 });
-
 // Menu button click
 var menuOpened = false;
 $(document).on('click', '.menu-button', function(){
@@ -75,6 +95,22 @@ function showPage1(){
   $('#contain-leaf').removeClass('move-out-left');
   $('#contain-leaf').toggleClass('leaf-top');
   $('#leaf-link').toggleClass('selected-img');
-  $('.images-label').css('opacity','1');
+  $('.leaf-label').css('opacity','1');
   $('#contain-leaf').css('animation','none');
 }
+function showPage2Option(){
+}
+$(document).on('click', '.next', function(){
+  console.log('bruh');
+  $('#contain-tree').removeClass('move-out-left');
+  $('#contain-tree').toggleClass('tree-link-show');
+});
+// $('#about-contain').scroll(function(){
+//   if($(this).scrollTop() == $(this).height()-20){
+//     console.log('bottom!');
+//   }
+//   console.log('scroll!');
+// });
+$(".about-contain").on('scroll', function(){
+  console.log('new scroll!');
+});
