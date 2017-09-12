@@ -10,7 +10,7 @@ window.addEventListener("load", function(){
   $('.learn').css('display','block');
   $('.come-right').css('right', '0');
   // $('.motto').text('First impression is everything.');
-  $('.motto').text('We are coming soon! Email us at contact@ornt.co if you have any questions for now.');
+  $('.motto').text('We are coming soon! Email us at chanwkim01@gmail.com if you have any questions for now.');
 
 
   document.addEventListener('scroll', function (event) {
