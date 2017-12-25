@@ -25,10 +25,9 @@
 }
 .images-label{
   transition: all 250ms ease-in-out;
-    opacity: 0;
     color: black;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 100;
     top: 52px;
     position: absolute;
     width: 100%;
@@ -83,6 +82,11 @@
 .tree-label{
   font-size:20px;
   top:49px;
+}
+.wave-label{
+  font-size:35px;
+  top:75px;
+
 }
 .contain-individual-images{
   z-index:200000;

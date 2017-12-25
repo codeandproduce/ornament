@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/who', (req,res) => {
- res.send("Chan slayer kim");
+ res.send("Chan slayer kim \n");
 });
 
 module.exports = router;

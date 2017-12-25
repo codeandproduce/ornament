@@ -30,7 +30,6 @@ window.addEventListener("load", function(){
         }
       }
   }, true /*Capture event*/);
-  console.log($('.about-contain').scrollTop());
 });
 
 var screenWidth = 0;

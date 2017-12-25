@@ -13,12 +13,34 @@
     <script src="/public/scripts/jq.js"></script>
   </head>
   <body>
+    <div class="nav hidden">
+      <div class="logo logo-hidden">
+        <img src="/public/img/logo.png" class="logoimg" />
+      </div>
+      <div class="contain-nav-options contain-nav-options-hidden">
+        <!-- <button class="nav-options">About</button>
+        <button class="nav-options">Projects</button>
+        <button class="nav-options">Contact</button> -->
+        <button class="menu-button">
+          <span class="menu-button-span shorter-span shorter-span-right"></span>
+          <span class="menu-button-span span-center"></span>
+          <span class="menu-button-span shorter-span shorter-span-left"></span>
+        </button>
+        <script>
+          $('.menu-button').hover(function(){
+            $('.menu-button-span').css('background-color', '#959595');
+          }, function(){
+            $('.menu-button-span').css('background-color', '#626262');
+          });
+        </script>
+      </div>
+    </div>
     <div class="contain">
       <div class="biglogo up-a-bit">
         <img class="center-logo" src="/public/img/mainpage-header.png"/>
         <p class="motto">Loading...</p>
         <div class="loader"></div>
-        <button disabled="disabled" class="learn">Learn more</button>
+        <button class="learn">Learn more</button>
       </div>
       <div class="tint">
         <div class="tint-contents">
@@ -60,19 +82,31 @@
     </div>
     <div class="contain-floating-links hidden">
       <div class="contain-individual-images contain-individual-images-left" id="contain-leaf">
-        <img id="leaf-link" class="links-floating" src="/public/img/leaves.png"/>
-        <h1 class="leaf-label images-label">About</h1>
+        <a href="/about">
+          <img id="leaf-link" class="links-floating" src="/public/img/leaves.png"/>
+          <h1 class="leaf-label images-label">About</h1>
+        </a>
       </div>
       <div class="contain-individual-images contain-individual-images-left" id="contain-tree">
-        <img id="tree-link" class="links-floating" src="/public/img/trees.png"/>
-        <h1 class="tree-label images-label">Past Projects</h1>
+        <a href="/past-projects">
+          <img id="tree-link" class="links-floating" src="/public/img/trees.png"/>
+          <h1 class="tree-label images-label">Past Projects</h1>
+        </a>
       </div>
       <div class="contain-individual-images contain-individual-images-right" id="contain-wave">
-        <img id="wave-link" class="links-floating" src="/public/img/waves.png"/>
+        <a href="/contact">
+          <img id="wave-link" class="links-floating" src="/public/img/waves.png"/>
+          <h1 class="wave-label images-label">Contact</h1>
+        </a>
       </div>
       <div class="contain-individual-images contain-individual-images-right" id="contain-dandelion">
         <img id="dandelion-link" class="links-floating" src="/public/img/dandelion.png" />
       </div>
+      <script>
+      $('.images-label').hover(function(){
+        $(this).parent().children().toggleClass('darkenImages');
+      });
+      </script>
     </div>
     <div class="bottomcontain">
       <div class="divide-from-contain"></div>
